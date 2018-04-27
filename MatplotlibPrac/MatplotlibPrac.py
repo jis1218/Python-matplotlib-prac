@@ -17,26 +17,32 @@ if __name__ == '__main__':
 #     x = np.arange(-6, 6, 0.1)
 #     y1 = np.sin(x)
 #     y2 = np.cos(x)
-# 
+#  
 #     y5 = 1+x*0
-# 
+#  
 #     plt.plot(x, y5)  
 #     plt.plot(x, y1)
 #     plt.plot(x, y2)   
-# 
+#  
 #     plt.show()
-
-    mnist = input_data.read_data_sets("./mnist/data/", one_hot=True)
-    batch_xs, batch_ys = mnist.train.next_batch(100)
-    print(np.shape(batch_xs))
-    reshaped = np.reshape(batch_xs[10], [28, 28])
-
-
-    list = [[1, 0, 0, 1, 0.5], [0, 1, 1, 1, 0.7], [1, 1, 0, 1, 0.3], [1, 0, 0, 1, 1.5]]
-    a = np.array(reshaped, dtype='float32')
+# 
+#     mnist = input_data.read_data_sets("./mnist/data/", one_hot=True)
+#     batch_xs, batch_ys = mnist.train.next_batch(100)
+#     print(np.shape(batch_xs))
+#     reshaped = np.reshape(batch_xs[10], [28, 28])
+# 
+# 
+#     list = [[1, 0, 0, 1, 0.5], [0, 1, 1, 1, 0.7], [1, 1, 0, 1, 0.3], [1, 0, 0, 1, 1.5]]
+#     a = np.array(reshaped, dtype='float32')
+#     
+#     plt.imshow(a)
+#     plt.show()
     
-    plt.imshow(a)
+    img = mpimg.imread('../img/FIG5.png')
+    print(img)
+    plt.imshow(img)
     plt.show()
+    print(np.shape(img))
     
     
     

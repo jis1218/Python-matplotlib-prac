@@ -51,3 +51,10 @@ plt.imshow(a)
 plt.show()
 ```
 ![img](https://github.com/jis1218/Python-matplotlib-prac/blob/master/img/FIG4.png)
+
+#### 그림 불러오기
+```python
+img = mpimg.imread('../img/FIG5.png') # 전의 폴더 접근하려면 ..을 붙인다. 
+plt.imshow(img)
+plt.show()
+```
