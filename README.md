@@ -58,3 +58,14 @@ img = mpimg.imread('../img/FIG5.png') # 전의 폴더 접근하려면 ..을 붙�
 plt.imshow(img)
 plt.show()
 ```
+
+#### 그림 저장하기
+```python
+mnist = input_data.read_data_sets("./mnist/data/", one_hot=True)
+batch_xs, batch_ys = mnist.train.next_batch(100)
+print(np.shape(batch_xs))
+reshaped = np.reshape(batch_xs[10], [28, 28])
+plt.imshow(a)
+# plt.show() 이걸 해버리면 image가 새로 create 되기 때문에 저장되었을 때 blank가 저장된다.
+plt.savefig('samples/{}.png'.format(str(i).zfill(3)), bbox_inches='tight')
+```
