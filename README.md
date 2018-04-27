@@ -19,3 +19,5 @@ if __name__ == '__main__':
     
     pass
 ```
+
+![img](https://github.com/jis1218/Python-matplotlib-prac/blob/master/img/FIG.png)
